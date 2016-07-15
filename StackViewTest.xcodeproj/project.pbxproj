@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4576E7661D38E4D4008E5CB8 /* DynamicHeightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4576E7651D38E4D4008E5CB8 /* DynamicHeightView.swift */; };
+		4576E7681D38E4EF008E5CB8 /* DynamicHeightView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4576E7671D38E4EF008E5CB8 /* DynamicHeightView.xib */; };
+		4576E76C1D38FBA5008E5CB8 /* UIView+NibLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4576E76B1D38FBA5008E5CB8 /* UIView+NibLoading.swift */; };
+		4576E76E1D39091D008E5CB8 /* CustomLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4576E76D1D39091D008E5CB8 /* CustomLabel.swift */; };
+		4576E7701D390B46008E5CB8 /* String+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4576E76F1D390B46008E5CB8 /* String+Additions.swift */; };
 		457EFE291D38DD65003B35C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457EFE281D38DD65003B35C3 /* AppDelegate.swift */; };
 		457EFE2B1D38DD65003B35C3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457EFE2A1D38DD65003B35C3 /* ViewController.swift */; };
 		457EFE2E1D38DD65003B35C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 457EFE2C1D38DD65003B35C3 /* Main.storyboard */; };
@@ -15,6 +20,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4576E7651D38E4D4008E5CB8 /* DynamicHeightView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicHeightView.swift; sourceTree = "<group>"; };
+		4576E7671D38E4EF008E5CB8 /* DynamicHeightView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DynamicHeightView.xib; sourceTree = "<group>"; };
+		4576E76B1D38FBA5008E5CB8 /* UIView+NibLoading.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+NibLoading.swift"; sourceTree = "<group>"; };
+		4576E76D1D39091D008E5CB8 /* CustomLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomLabel.swift; sourceTree = "<group>"; };
+		4576E76F1D390B46008E5CB8 /* String+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Additions.swift"; sourceTree = "<group>"; };
 		457EFE251D38DD65003B35C3 /* StackViewTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StackViewTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		457EFE281D38DD65003B35C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		457EFE2A1D38DD65003B35C3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -35,6 +45,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4576E7691D38E525008E5CB8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4576E76A1D38E52F008E5CB8 /* DynamicHeightView */,
+				4576E76B1D38FBA5008E5CB8 /* UIView+NibLoading.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		4576E76A1D38E52F008E5CB8 /* DynamicHeightView */ = {
+			isa = PBXGroup;
+			children = (
+				4576E7651D38E4D4008E5CB8 /* DynamicHeightView.swift */,
+				4576E7671D38E4EF008E5CB8 /* DynamicHeightView.xib */,
+				4576E76D1D39091D008E5CB8 /* CustomLabel.swift */,
+			);
+			name = DynamicHeightView;
+			sourceTree = "<group>";
+		};
 		457EFE1C1D38DD65003B35C3 = {
 			isa = PBXGroup;
 			children = (
@@ -54,8 +83,10 @@
 		457EFE271D38DD65003B35C3 /* StackViewTest */ = {
 			isa = PBXGroup;
 			children = (
+				4576E7691D38E525008E5CB8 /* Views */,
 				457EFE281D38DD65003B35C3 /* AppDelegate.swift */,
 				457EFE2A1D38DD65003B35C3 /* ViewController.swift */,
+				4576E76F1D390B46008E5CB8 /* String+Additions.swift */,
 				457EFE2C1D38DD65003B35C3 /* Main.storyboard */,
 				457EFE2F1D38DD65003B35C3 /* Assets.xcassets */,
 				457EFE311D38DD65003B35C3 /* LaunchScreen.storyboard */,
@@ -91,7 +122,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = Test;
 				TargetAttributes = {
 					457EFE241D38DD65003B35C3 = {
@@ -126,6 +157,7 @@
 				457EFE331D38DD65003B35C3 /* LaunchScreen.storyboard in Resources */,
 				457EFE301D38DD65003B35C3 /* Assets.xcassets in Resources */,
 				457EFE2E1D38DD65003B35C3 /* Main.storyboard in Resources */,
+				4576E7681D38E4EF008E5CB8 /* DynamicHeightView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,6 +168,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4576E7661D38E4D4008E5CB8 /* DynamicHeightView.swift in Sources */,
+				4576E76E1D39091D008E5CB8 /* CustomLabel.swift in Sources */,
+				4576E7701D390B46008E5CB8 /* String+Additions.swift in Sources */,
+				4576E76C1D38FBA5008E5CB8 /* UIView+NibLoading.swift in Sources */,
 				457EFE2B1D38DD65003B35C3 /* ViewController.swift in Sources */,
 				457EFE291D38DD65003B35C3 /* AppDelegate.swift in Sources */,
 			);
@@ -268,6 +304,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.test.StackViewTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
