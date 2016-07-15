@@ -10,7 +10,7 @@ import UIKit
 
 class DynamicHeightView: UIView {
 
-    @IBOutlet weak private(set) var dynamicHeightLabel: UILabel!
+    @IBOutlet weak private(set) var dynamicHeightLabel: CustomLabel!
 
     func updateView(withText text: String) {
         dynamicHeightLabel.text = text
