@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11163.2" systemVersion="16A201w" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11133"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="HeaderView" customModule="StackViewTest" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="186"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cat" translatesAutoresizingMaskIntoConstraints="NO" id="X2J-Bv-CVR"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Opm-Ze-KG9">
+                    <fontDescription key="fontDescription" name="AvenirNextCondensed-Heavy" family="Avenir Next Condensed" pointSize="23"/>
+                    <state key="normal" title="This Button Works">
+                        <color key="titleColor" red="1" green="0.41265543789999998" blue="0.37727543800000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="didTapButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="kHm-OW-rCt"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Opm-Ze-KG9" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="5Y4-qf-ngL"/>
+                <constraint firstAttribute="trailing" secondItem="X2J-Bv-CVR" secondAttribute="trailing" id="U70-nZ-DEl"/>
+                <constraint firstAttribute="bottom" secondItem="X2J-Bv-CVR" secondAttribute="bottom" id="cgD-mG-dWc"/>
+                <constraint firstItem="Opm-Ze-KG9" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="ekf-Wo-9L3"/>
+                <constraint firstItem="X2J-Bv-CVR" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="f1X-uL-msh"/>
+                <constraint firstItem="X2J-Bv-CVR" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="pC5-tL-kZZ"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="33.5" y="66"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="cat" width="252" height="165"/>
+    </resources>
+</document>

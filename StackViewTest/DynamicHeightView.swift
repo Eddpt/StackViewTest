@@ -2,7 +2,7 @@
 //  DynamicHeightView.swift
 //  StackViewTest
 //
-//  Created by Edgar Antunes on 15/07/2016.
+//  Created by Eddpt on 15/07/2016.
 //  Copyright © 2016 Test. All rights reserved.
 //
 
