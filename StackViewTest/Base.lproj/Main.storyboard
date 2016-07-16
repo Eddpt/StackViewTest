@@ -74,7 +74,7 @@
             </objects>
             <point key="canvasLocation" x="2954.4000000000001" y="138.98050974512745"/>
         </scene>
-        <!--Header-->
+        <!--Parallax Header-->
         <scene sceneID="rba-gz-vDe">
             <objects>
                 <viewController automaticallyAdjustsScrollViewInsets="NO" id="bMy-Ox-QeN" customClass="HeaderViewController" customModule="StackViewTest" customModuleProvider="target" sceneMemberID="viewController">
@@ -136,7 +136,7 @@
                             <constraint firstItem="p0M-Rt-YIg" firstAttribute="top" secondItem="XqG-Rp-Hwp" secondAttribute="bottom" id="l1M-D2-ogc"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Header" id="gkR-fz-jnl"/>
+                    <navigationItem key="navigationItem" title="Parallax Header" id="gkR-fz-jnl"/>
                     <connections>
                         <outlet property="headerContainerView" destination="wtX-9b-epe" id="fsF-iG-W8E"/>
                         <outlet property="stackView" destination="j2s-0i-f5J" id="mmz-VD-ViI"/>
@@ -165,11 +165,11 @@
             </objects>
             <point key="canvasLocation" x="1076" y="138.98050974512745"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Stack View-->
         <scene sceneID="k2h-gR-vZf">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="4Xo-2F-VTH" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" systemItem="favorites" id="pZx-rv-rrJ"/>
+                    <tabBarItem key="tabBarItem" title="Stack View" image="stack" id="pZx-rv-rrJ"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="vd1-Xs-nwx">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -184,11 +184,11 @@
             </objects>
             <point key="canvasLocation" x="2015.2" y="138.98050974512745"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Parallax Header-->
         <scene sceneID="Sl0-T2-EMN">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="2HX-qA-b2O" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" systemItem="bookmarks" id="nOC-ZT-imp"/>
+                    <tabBarItem key="tabBarItem" title="Parallax Header" image="parallax" id="nOC-ZT-imp"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="cFl-sR-pt3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -204,4 +204,8 @@
             <point key="canvasLocation" x="2013.5999999999999" y="912.5937031484259"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="parallax" width="48" height="40"/>
+        <image name="stack" width="24" height="21"/>
+    </resources>
 </document>
