@@ -54,3 +54,5 @@ This is how it looks like:
 
 **Note:** At the moment, using Xcode 8 beta 2 and iOS 10 this solution seems broken. Basically pinning the header to the `topLayoutGuide` is not having the desired effect and the Parallax Effect is lost, even though it works fine in iOS 9.
 I'm not sure whether this is a bug in Auto-layout that might get fixed in the future or not. (27388993)
+
+A possible workaround is to use `Top Space to View Margin` rather than `Top Layout Guide`.
