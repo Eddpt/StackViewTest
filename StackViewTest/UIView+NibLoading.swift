@@ -18,7 +18,7 @@ public extension UIView {
         let name = nibNameOrNil ?? self.nibName
 
         let nibViews = Bundle.main.loadNibNamed(name, owner: nil, options: nil)
-        return nibViews.first as! T
+        return nibViews?.first as! T
     }
 
     private static var nibName: String {
