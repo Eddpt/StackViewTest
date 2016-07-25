@@ -29,12 +29,11 @@ class HeaderViewController: UIViewController {
         headerView.translatesAutoresizingMaskIntoConstraints = false
         headerView.viewController = self
         headerContainerView.addSubview(headerView)
-        let leadingConstraint = NSLayoutConstraint(item: headerView, attribute: .left, relatedBy: .equal, toItem: headerContainerView, attribute: .left, multiplier: 1, constant: 0)
-        let trailingConstraint = NSLayoutConstraint(item: headerView, attribute: .right, relatedBy: .equal, toItem: headerContainerView, attribute: .right, multiplier: 1, constant: 0)
-        let topConstraint = NSLayoutConstraint(item: headerView, attribute: .top, relatedBy: .equal, toItem: headerContainerView, attribute: .top, multiplier: 1, constant: 0)
-        let bottomConstraint = NSLayoutConstraint(item: headerView, attribute: .bottom, relatedBy: .equal, toItem: headerContainerView, attribute: .bottom, multiplier: 1, constant: 0)
 
-        headerContainerView.addConstraints([leadingConstraint, trailingConstraint, topConstraint, bottomConstraint])
+        headerView.leftAnchor.constraint(equalTo: headerContainerView.leftAnchor).isActive = true
+        headerView.rightAnchor.constraint(equalTo: headerContainerView.rightAnchor).isActive = true
+        headerView.topAnchor.constraint(equalTo: headerContainerView.topAnchor).isActive = true
+        headerView.bottomAnchor.constraint(equalTo: headerContainerView.bottomAnchor).isActive = true
     }
 
     private func populateStackView() {
