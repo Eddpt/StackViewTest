@@ -41,7 +41,7 @@ class HeaderViewController: UIViewController {
 
         for index in 0..<numberOfChildren {
             let label = DynamicHeightView.loadFromNib()
-            label.backgroundColor = (index % 2) == 0 ? .red() : .green()
+            label.backgroundColor = ((index % 2) == 0) ? .red : .green
             label.updateView(withText: String.randomLoremIpsumString())
             stackView.addArrangedSubview(label)
         }
